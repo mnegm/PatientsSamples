@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>sample page</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Patient</th>
+    <th>SampleID</th>
+    <th>Refregerator</th>
+    <th>rack number</th>
+    <th>line number</th>
+  </tr>
+    <h1>SAMPLES</h1>
+    {% for sample in samples %}
+        <tr>
+        <td>{{ sample.patient }}</td>
+        <td>{{ sample.sampleID }}</td>
+        <td>{{ sample.refregator }}</td>
+        <td>{{ sample.rackNUM }}</td>
+        <td>{{ sample.lineNum }}</td>
+        <br>
+        </tr>
+
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
